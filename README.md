@@ -8,6 +8,7 @@ Achieved complete control over the servo motors' movement from 0 to 180 degrees 
 The circuit operates effectively, accurately responding to programmed commands. 🚀
 
 
-![image](https://github.com/VAsmaaShaker/Controlled_6-Servo-Motors-in-an-Electronic-Circuit/assets/174564364/1ad7113c-5abc-4dc1-bcb9-ee4a1069a3a7)
+![image](https://github.com/VAsmaaShaker/Controlled_6-Servo-Motors-in-an-Electronic-Circuit/assets/174564364/762c6332-22d1-4316-85e7-1095d49c8e0e)
+
 ![image](https://github.com/VAsmaaShaker/Controlled_6-Servo-Motors-in-an-Electronic-Circuit/assets/174564364/12b83227-3929-45f8-8960-7b7f7f30228f)
 
