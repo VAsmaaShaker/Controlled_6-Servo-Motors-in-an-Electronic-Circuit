@@ -2,7 +2,8 @@
   This program controls 6 servo motors on an Arduino board,
   rotating them in a range from 0 to 180 degrees and back.
 
-  Implemented by Asmaa Shaker.
+  Implemented by Asmaa Shaker <https://www.tinkercad.com/things/5tdEIU10hh7-task1/editelsharecode=q1qUtlGKqur5pfqyqXcqN4NYqqvdivPk_I9za6OPqyA>
+ This code is in the public domain.
 */
 
 #include <Servo.h>
