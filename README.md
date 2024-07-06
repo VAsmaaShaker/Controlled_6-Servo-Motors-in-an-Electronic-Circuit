@@ -2,7 +2,7 @@
 
 Successfully connected and programmed an electronic circuit featuring 6 servo motors using C++ in Tinkercad's virtual simulation. 🤖
 
-Achieved complete control over the servo motors' movement from 0 to 180 degrees and back using an Arduino board. The rotation was achieved with the code:
+Achieved complete control over the servo motors' movement from 0 to 180 degrees and back using an Arduino board. The rotation was achieved with the line:
  "for (pos = 0; pos <= 180; pos += 1)" , in reverse with the opposite signal.
 
 The circuit operates effectively, accurately responding to programmed commands. 🚀
