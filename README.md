@@ -1,4 +1,4 @@
-# Controlled_6-Servo-Motors-in-an-Electronic-Circuit
+# 🕹️Controlled_6-Servo-Motors-in-an-Electronic-Circuit
 
 Successfully connected and programmed an electronic circuit featuring 6 servo motors using C++ in Tinkercad's virtual simulation. 🤖
 
