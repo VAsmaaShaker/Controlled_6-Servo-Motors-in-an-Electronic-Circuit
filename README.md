@@ -2,13 +2,14 @@
 
 Successfully connected and programmed an electronic circuit featuring 6 servo motors using C++ in Tinkercad's virtual simulation. 🤖
 
-![image](https://github.com/VAsmaaShaker/Controlled_6-Servo-Motors-in-an-Electronic-Circuit/assets/174564364/a5774ac4-e907-49af-aed4-3ba1dd722c18)
+![image](https://github.com/VAsmaaShaker/Controlled_6-Servo-Motors-in-an-Electronic-Circuit/assets/174564364/c1387ae5-b037-48d8-95db-411c9c0f9f36)
 
 
-Achieved complete control over the servo motors' movement from 0 to 180 degrees and back using an Arduino board. The rotation was achieved with the line:
- "for (pos = 0; pos <= 180; pos += 1)" , in reverse with the opposite signal.
-![image](https://github.com/VAsmaaShaker/Controlled_6-Servo-Motors-in-an-Electronic-Circuit/assets/174564364/9b0f8bc6-0baa-475d-9cce-0bbb42287337)
-![image](https://github.com/VAsmaaShaker/Controlled_6-Servo-Motors-in-an-Electronic-Circuit/assets/174564364/bc0cc94f-c2f1-430b-8a21-ab28f4d9a7af)
+• I have designed a circuit that consists of 6 servo motors and 6 potentiometers.
+  
+• Each potentiometer is used to control the angular position of one servo motor, ranging from 0 to 180 degrees.
+
+•I utilized a voltage regulator to maintain a 5-volt supply.
 
 
 The circuit operates effectively, accurately responding to programmed commands. 🚀
