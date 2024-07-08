@@ -1,6 +1,6 @@
 /*
   This program controls 6 servo motors on an Arduino board,
-  rotating them in a range from 0 to 180 degrees and back.
+  rotating them in a range from 0 to 180 degrees.
   -------------------------------------------------------
   Implemented by Asmaa Shaker 
   This code is in the public domain.
@@ -9,7 +9,6 @@
 // Variables for analog inputs 
 int poter1 = 0, poter2 = 0, poter3 = 0, 
     poter4 = 0, poter5 = 0, poter6 = 0;
-
 // Variables for mapped servo values
 int servo1 = 0, servo2 = 0, servo3 = 0,
     servo4 = 0, servo5 = 0, servo6 = 0;
