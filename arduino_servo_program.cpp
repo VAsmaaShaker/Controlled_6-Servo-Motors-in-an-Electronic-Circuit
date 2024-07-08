@@ -1,61 +1,78 @@
 /*
   This program controls 6 servo motors on an Arduino board,
   rotating them in a range from 0 to 180 degrees and back.
-
-  Implemented by Asmaa Shaker < https://www.tinkercad.com/things/5tdEIU10hh7-task1/editel?sharecode=q1qUtlGKqur5pfqyqXcqN4NYqqvdivPk_I9za6OPqyA >
+  -------------------------------------------------------
+  Implemented by Asmaa Shaker 
   This code is in the public domain.
 */
 #include <Servo.h>
+// Variables for analog inputs 
+int poter1 = 0, poter2 = 0, poter3 = 0, 
+    poter4 = 0, poter5 = 0, poter6 = 0;
 
-Servo servo1;
-Servo servo2;
-Servo servo3;
-Servo servo4;
-Servo servo5;
-Servo servo6;
+// Variables for mapped servo values
+int servo1 = 0, servo2 = 0, servo3 = 0,
+    servo4 = 0, servo5 = 0, servo6 = 0;
 
-void setup() {
-  // Attach each servo to its respective pin
-  servo1.attach(3);  
-  servo2.attach(5);
-  servo3.attach(6); 
-  servo4.attach(9);  
-  servo5.attach(10); 
-  servo6.attach(11);
+// Define servo objects 
+Servo servoPIN3, servoPIN5, servoPIN6, 
+servoPIN9, servoPIN10, servoPIN11;
 
-  // Set initial positions (optional)
-  servo1.write(90);  
-  servo2.write(90);
-  servo3.write(90); 
-  servo4.write(90);  
-  servo5.write(90); 
-  servo6.write(90);
+// Define servo pins
+const int SERVO_PIN_3 = 3;
+const int SERVO_PIN_5 = 5;
+const int SERVO_PIN_6 = 6;
+const int SERVO_PIN_9 = 9;
+const int SERVO_PIN_10 = 10;
+const int SERVO_PIN_11 = 11;
+
+void setup()
+{// Attach servo to pins with min & max pulse widths
+  pinMode(A0, INPUT);
+  servoPIN3.attach(SERVO_PIN_3, 500, 2500);
+  
+  pinMode(A1, INPUT);
+  servoPIN5.attach(SERVO_PIN_5, 500, 2500);
+  
+  pinMode(A2, INPUT);
+  servoPIN6.attach(SERVO_PIN_6, 500, 2500);
+  
+  pinMode(A3, INPUT);
+  servoPIN9.attach(SERVO_PIN_9, 500, 2500);
+  
+  pinMode(A4, INPUT);
+  servoPIN10.attach(SERVO_PIN_10, 500, 2500);
+  
+  pinMode(A5, INPUT);
+  servoPIN11.attach(SERVO_PIN_11, 500, 2500);
 }
 
-void loop() {
-  // Move servos from 0 degrees to 180 degrees
-  for (int pos = 0; pos <= 180; pos++) {
-    servo1.write(pos);
-    servo2.write(pos);
-    servo3.write(pos);
-    servo4.write(pos);
-    servo5.write(pos);
-    servo6.write(pos);
-    delay(10); // Adjust delay if needed
-  }
-
-  delay(1000); // Delay after completing the first cycle
-
-  // Move servos from 180 degrees to 0 degrees
-  for (int pos = 180; pos >= 0; pos--) {
-    servo1.write(pos);
-    servo2.write(pos);
-    servo3.write(pos);
-    servo4.write(pos);
-    servo5.write(pos);
-    servo6.write(pos);
-    delay(10); // Adjust delay if needed
-  }
-
-  delay(1000); // Delay after completing the second cycle
+void loop()
+{
+// Read analog inputs, map to servo angles,write to servos
+  poter1 = analogRead(A0);
+  servo1 = map(poter1, 0, 1023, 0, 180);
+  servoPIN3.write(servo1);
+  
+  poter2 = analogRead(A1);
+  servo2 = map(poter2, 0, 1023, 0, 180);
+  servoPIN5.write(servo2);
+  
+  poter3 = analogRead(A2);
+  servo3 = map(poter3, 0, 1023, 0, 180);
+  servoPIN6.write(servo3);
+  
+  poter4 = analogRead(A3);
+  servo4 = map(poter4, 0, 1023, 0, 180);
+  servoPIN9.write(servo4);
+  
+  poter5 = analogRead(A4);
+  servo5 = map(poter5, 0, 1023, 0, 180);
+  servoPIN10.write(servo5);
+  
+  poter6 = analogRead(A5);
+  servo6 = map(poter6, 0, 1023, 0, 180);
+  servoPIN11.write(servo6);
+  
+  delay(10); // Delay for stability
 }
